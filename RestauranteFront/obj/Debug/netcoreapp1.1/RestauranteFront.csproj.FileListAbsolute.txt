@@ -1,0 +1,9 @@
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\bin\Debug\netcoreapp1.1\RestauranteFront.deps.json
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\bin\Debug\netcoreapp1.1\RestauranteFront.runtimeconfig.json
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\bin\Debug\netcoreapp1.1\RestauranteFront.runtimeconfig.dev.json
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\bin\Debug\netcoreapp1.1\RestauranteFront.dll
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\bin\Debug\netcoreapp1.1\RestauranteFront.pdb
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\obj\Debug\netcoreapp1.1\RestauranteFront.AssemblyInfo.cs
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\obj\Debug\netcoreapp1.1\RestauranteFront.dll
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\obj\Debug\netcoreapp1.1\RestauranteFront.pdb
+C:\Users\renan\OneDrive\Documents\Visual Studio 2017\Projects\RestauranteWebAPI\RestauranteFront\obj\Debug\netcoreapp1.1\RestauranteFront.csprojResolveAssemblyReference.cache

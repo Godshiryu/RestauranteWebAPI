@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>{{ title }}</h3>
+  <div class="jumbotron">
+    <form [formGroup]="form" (ngSubmit)="save()">
+      <div>
+        <div class="form-group">
+          <label for="nome" [class.active]="restaurante.nome">Nome</label>
+          <input id="nome" class="form-control" placeholder="Nome do restaurante" type="text" [(ngModel)]="restaurante.nome" formControlName="nome"
+            [class.invalid]="form.controls['nome'].touched && !form.controls['nome'].valid" required>
+        </div>
+      </div>
+
+      <button class="btn btn-danger" type="button" mwlConfirmationPopover
+      [title]="popOutTitle"
+      [message]="popOutMsg"
+      placement="bottom"
+      (confirm)="cancel()"
+      >Cancelar</button>
+      <button class="btn btn-success" type="submit" [disabled]="!form.valid">Salvar</button>
+
+      <!--p>Value: {{ form.value | json }}</p>
+    <p>Validation status: {{ form.status }}</p-->
+
+    </form>
+  </div>
+</div>

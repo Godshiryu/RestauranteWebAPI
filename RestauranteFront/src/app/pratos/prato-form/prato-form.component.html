@@ -1,0 +1,45 @@
+<div class="container">
+  <h3>{{ title }}</h3>
+  <div class="jumbotron">
+    <form [formGroup]="form" (ngSubmit)="save()">
+      <div>
+        <div class="form-group">
+          <label for="nome" [class.active]="prato.nome">Nome</label>
+          <input id="nome" class="form-control" placeholder="Nome do prato" type="text" [(ngModel)]="prato.nome" formControlName="nome"
+            [class.invalid]="form.controls['nome'].touched && !form.controls['nome'].valid">
+        </div>
+
+        <div class="form-group">
+          <label for="restaurantes">Restaurantes</label>
+          <select class="form-control" formControlName="restaurantes" id="restaurantes" [(ngModel)]="prato.restauranteId" [class.invalid]="form.controls['restaurantes'].touched && !form.controls['restaurantes'].valid">
+          <option *ngFor="let restaurante of restaurantes"
+            [value]="restaurante.id"
+            [selected]="restaurante.id == prato.restauranteId">
+                {{ restaurante.nome }}
+          </option>
+        </select>
+        </div>
+
+
+        <div>
+          <div class="form-group">
+            <label for="preco" [class.active]="prato.preco">Preço</label>
+            <input id="preco" class="form-control" placeholder="Preço do prato" type="number" [(ngModel)]="prato.preco" formControlName="preco"
+              [class.invalid]="form.controls['preco'].touched && !form.controls['preco'].valid">
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <button class="btn btn-danger" type="button" mwlConfirmationPopover [title]="popOutTitle" [message]="popOutMsg" placement="bottom"
+        (confirm)="cancel()">Cancelar</button>
+      <button class="btn btn-success" type="submit" [disabled]="!form.valid">Salvar</button>
+
+      <!--p>Value: {{ form.value | json }}</p>
+    <p>Validation status: {{ form.status }}</p-->
+
+    </form>
+  </div>
+</div>
